@@ -14,6 +14,8 @@ export default function PortfolioPage() {
   const { language } = useLanguage()
   const copy = portfolioPageCopy(language)
   const whatsappUrl = `https://wa.me/5493516596061`
+  const portfolioImageClass = "rounded-lg opacity-85 group-hover:opacity-100 transition-opacity w-full h-full object-cover"
+  const portfolioImageSizes = "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 
   const portfolioItems = useMemo(
     () => ({
@@ -52,7 +54,7 @@ export default function PortfolioPage() {
                   className={`bg-gray-900 border-gray-800 hover:border-gray-700 transition-colors group ${
                     item.name === "Grupo DT" ||
                     item.name === "2G Iluminación" ||
-                    item.name === "No Standar" ||
+                    item.name === "No Standard" ||
                     item.name === "SEB Consulting" ||
                     item.name === "Refugio Quitapena" ||
                     item.name === "MoodleXperts"
@@ -72,9 +74,11 @@ export default function PortfolioPage() {
                           <Image
                             src="/images/grupo-dt-branding.jpg"
                             alt="Grupo DT Branding"
-                            width={300}
-                            height={200}
-                            className="rounded-lg opacity-50 group-hover:opacity-80 transition-opacity w-full h-full object-cover"
+                            width={1200}
+                            height={800}
+                            quality={95}
+                            sizes={portfolioImageSizes}
+                            className={portfolioImageClass}
                           />
                         </div>
                         <Badge className="mb-3 bg-gray-700 text-gray-200">{item.category}</Badge>
@@ -94,9 +98,11 @@ export default function PortfolioPage() {
                           <Image
                             src="/images/2g-iluminacion-branding.jpg"
                             alt="2G Iluminación Branding"
-                            width={300}
-                            height={200}
-                            className="rounded-lg opacity-50 group-hover:opacity-80 transition-opacity w-full h-full object-cover"
+                            width={1200}
+                            height={800}
+                            quality={95}
+                            sizes={portfolioImageSizes}
+                            className={portfolioImageClass}
                           />
                         </div>
                         <Badge className="mb-3 bg-gray-700 text-gray-200">{item.category}</Badge>
@@ -105,7 +111,7 @@ export default function PortfolioPage() {
                         </h3>
                         <p className="text-gray-300">{item.description}</p>
                       </a>
-                    ) : item.name === "No Standar" ? (
+                    ) : item.name === "No Standard" ? (
                       <a
                         href="https://www.behance.net/gallery/230643423/No-Standard-Diseno-de-identidad-corporativa"
                         target="_blank"
@@ -116,9 +122,11 @@ export default function PortfolioPage() {
                           <Image
                             src="/images/no-standard-branding.jpg"
                             alt="No Standard Branding"
-                            width={300}
-                            height={200}
-                            className="rounded-lg opacity-50 group-hover:opacity-80 transition-opacity w-full h-full object-cover"
+                            width={1200}
+                            height={800}
+                            quality={95}
+                            sizes={portfolioImageSizes}
+                            className={portfolioImageClass}
                           />
                         </div>
                         <Badge className="mb-3 bg-gray-700 text-gray-200">{item.category}</Badge>
@@ -138,9 +146,11 @@ export default function PortfolioPage() {
                           <Image
                             src="/images/seb-consulting-branding.jpg"
                             alt="SEB Consulting Branding"
-                            width={300}
-                            height={200}
-                            className="rounded-lg opacity-50 group-hover:opacity-80 transition-opacity w-full h-full object-cover"
+                            width={1200}
+                            height={800}
+                            quality={95}
+                            sizes={portfolioImageSizes}
+                            className={portfolioImageClass}
                           />
                         </div>
                         <Badge className="mb-3 bg-gray-700 text-gray-200">{item.category}</Badge>
@@ -160,9 +170,11 @@ export default function PortfolioPage() {
                           <Image
                             src="/images/refugio-quitapena-branding.jpg"
                             alt="Refugio Quitapena Branding"
-                            width={300}
-                            height={200}
-                            className="rounded-lg opacity-50 group-hover:opacity-80 transition-opacity w-full h-full object-cover"
+                            width={1200}
+                            height={800}
+                            quality={95}
+                            sizes={portfolioImageSizes}
+                            className={portfolioImageClass}
                           />
                         </div>
                         <Badge className="mb-3 bg-gray-700 text-gray-200">{item.category}</Badge>
@@ -182,9 +194,11 @@ export default function PortfolioPage() {
                           <Image
                             src="/images/moodlexperts-branding.jpg"
                             alt="MoodleXperts Branding"
-                            width={300}
-                            height={200}
-                            className="rounded-lg opacity-50 group-hover:opacity-80 transition-opacity w-full h-full object-cover"
+                            width={1200}
+                            height={800}
+                            quality={95}
+                            sizes={portfolioImageSizes}
+                            className={portfolioImageClass}
                           />
                         </div>
                         <Badge className="mb-3 bg-gray-700 text-gray-200">{item.category}</Badge>
@@ -246,9 +260,11 @@ export default function PortfolioPage() {
                                         : "/images/utn-frn-website.jpg"
                         }
                         alt={item.name}
-                        width={300}
-                        height={200}
-                        className="rounded-lg opacity-50 group-hover:opacity-80 transition-opacity w-full h-full object-cover"
+                        width={1200}
+                        height={800}
+                        quality={95}
+                        sizes={portfolioImageSizes}
+                        className={portfolioImageClass}
                       />
                     </div>
                     <Badge className="mb-3 bg-gray-700 text-gray-200">{item.category}</Badge>
@@ -287,17 +303,21 @@ export default function PortfolioPage() {
                         <Image
                           src="/images/2g-iluminacion-whatsapp-business.jpg"
                           alt="2G Iluminación WhatsApp Business"
-                          width={300}
-                          height={200}
-                          className="rounded-lg opacity-50 group-hover:opacity-80 transition-opacity w-full h-full object-cover"
+                          width={1200}
+                          height={800}
+                          quality={95}
+                          sizes={portfolioImageSizes}
+                          className={portfolioImageClass}
                         />
                       ) : item.name === "Sinkromat" ? (
                         <Image
                           src="/images/sinkromat-whatsapp-business.jpg"
                           alt="Sinkromat WhatsApp Business"
-                          width={300}
-                          height={200}
-                          className="rounded-lg opacity-50 group-hover:opacity-80 transition-opacity w-full h-full object-cover"
+                          width={1200}
+                          height={800}
+                          quality={95}
+                          sizes={portfolioImageSizes}
+                          className={portfolioImageClass}
                         />
                       ) : (
                         <MessageCircle className="h-16 w-16 text-[#00FF80]" />

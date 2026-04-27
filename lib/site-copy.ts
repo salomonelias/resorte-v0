@@ -5,7 +5,7 @@ export function portfolioBrandingItems(lang: SiteLang) {
   return [
     { name: "Grupo DT", description: d("Identidad visual corporativa para empresa constructora", "Corporate visual identity for a construction company"), category: "Branding" },
     { name: "2G Iluminación", description: d("Identidad visual para empresa de iluminación LED", "Visual identity for an LED lighting company"), category: "Branding" },
-    { name: "No Standar", description: d("Marca y concepto visual para proyecto innovador", "Brand and visual concept for an innovative project"), category: "Branding" },
+    { name: "No Standard", description: d("Marca y concepto visual para proyecto innovador", "Brand and visual concept for an innovative project"), category: "Branding" },
     { name: "MoodleXperts", description: d("Branding para consultora especializada en Moodle", "Branding for a Moodle-focused consultancy"), category: "Branding" },
     { name: "SEB Consulting", description: d("Identidad corporativa para consultora empresarial", "Corporate identity for a business consultancy"), category: "Branding" },
     { name: "Refugio Quitapena", description: d("Branding para refugio de montaña", "Branding for a mountain shelter"), category: "Branding" },
