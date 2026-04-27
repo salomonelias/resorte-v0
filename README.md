@@ -1,4 +1,4 @@
-# Resorte Agencia — Sitio web
+# Resorte Agencia — Sitio web 😎
 
 Sitio institucional de **Resorte Agencia** (Córdoba, Argentina): agencia creativa enfocada en branding, diseño web, e-commerce e integración con WhatsApp Business. Incluye páginas de servicios, portfolio, método de trabajo, contacto e idioma **es / en**.
 
